@@ -18,10 +18,28 @@
     "logging",
     "logs"
   ],
-  "author": "Jason Ruane <jason.ruane@gmail.com> (http://www.randomlabs.io/)",
+  "node-red": {
+    "nodes": {
+      "logentries": "node-red-contrib-logentries.js"
+    }
+  },
+  "dependencies": {
+    "logentries":""
+  },
+  "author": {
+    "name": "Jason Ruane",
+    "email": "jason.ruane@gmail.com",
+    "url": "http://www.randomlabs.io/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jasonruane/node-red-contrib-logentries/issues"
   },
-  "homepage": "https://github.com/jasonruane/node-red-contrib-logentries"
+  "homepage": "https://github.com/jasonruane/node-red-contrib-logentries",
+  "readme": "# node-red-contrib-logentries\r\n\r\n** A Node-Red wrapper for [logentries.com](http://logentries.com) **\r\n\r\n\r\n# What it is\r\n\r\nAn easy-to-use wrapper for the logentries.com service. The _node-red-contrib-logentries_ node makes it very easy to log directly to your logentries.com account direct from Node-Red.\r\n\r\n\r\n# Key Features:\r\n\r\n   * Drag and drop on node-red\r\n   * fully configurable\r\n   * cloud logging enables many sources to arrive in one viewable, searchable location\r\n\r\n   \r\n## Installation\r\n\r\n\tnpm install node-red-contrib-logentries\r\n\t- This will download this module and place in your node_modules directory\r\n    npm install logentries\r\n\t- This installs the required NodeJs package for logentries service. However it currently requires an update so navigate to your subdirectory of node_modules\\logentries\\lib and edit logentries.js file so that line 57 is changed from:\r\n\tport: opts.secure ? 20000 : 10000,\r\n\tto this:\r\n\tport: opts.port || (opts.secure ? 20000 : 10000),\r\n\r\n\r\n\r\n## Usage\r\n\r\n\r\nThis module sends your logging entries to the cloud hosted logging service logentries.com. You will need an account with this service for the module to work.\r\n\r\nOnce you have logentries.com account, you need just one configuration item to initialize a logging instance (you can create more than one):\r\n\r\n  * TOKEN: As supplied by Logentries when you create a logfile of source type Token TCP.\r\n\r\n[logentries.com User Guide](https://logentries.com/docs/userguide)\r\n\r\n\r\n## logentries.com service.\r\n\r\nCompany site: [logentries.com](http://logentries.com)\r\n\r\n\r\n",
+  "readmeFilename": "README.md",
+  "gitHead": "566d7148abc06abb2664118f25ae909921c936a6",
+  "_id": "node-red-contrib-logentries@0.1.1",
+  "_shasum": "b81ef98babedd0562735f0d7a07197404719f56b",
+  "_from": "node-red-contrib-logentries@"
 }
