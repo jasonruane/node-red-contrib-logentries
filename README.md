@@ -2,8 +2,6 @@
 
 ** A Node-Red wrapper for [logentries.com](http://logentries.com) **
 
-Current Version: 0.1
-
 
 # What it is
 
