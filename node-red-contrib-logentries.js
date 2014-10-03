@@ -1,5 +1,5 @@
 module.exports = function(RED) {
-	var logentries = require("node-logentries");
+	var logentries = require("logentries");
 	
 	
     function LogEntriesNode(config) {
