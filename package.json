@@ -1,0 +1,27 @@
+{
+  "name": "node-red-contrib-logentries",
+  "version": "0.1.0",
+  "description": "Node-Red packaged node to log to cloud logging service logentries.com",
+  "main": "node-red-contrib-logentries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonruane/node-red-contrib-logentries.git"
+  },
+  "keywords": [
+    "node-red-contrib",
+    "node-red",
+    "logentries",
+    "cloud",
+    "logging",
+    "logs"
+  ],
+  "author": "Jason Ruane <jason.ruane@gmail.com> (http://www.randomlabs.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonruane/node-red-contrib-logentries/issues"
+  },
+  "homepage": "https://github.com/jasonruane/node-red-contrib-logentries"
+}
