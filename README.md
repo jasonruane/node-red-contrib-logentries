@@ -18,17 +18,15 @@ An easy-to-use wrapper for the logentries.com service. The _node-red-contrib-log
 ## Installation
 
 	npm install node-red-contrib-logentries
+	
 	- This will download this module and place in your node_modules directory
-    npm install logentries
-	- This installs the required NodeJs package for logentries service. However it currently requires an update so navigate to your subdirectory of node_modules\logentries\lib and edit logentries.js file so that line 57 is changed from:
-	port: opts.secure ? 20000 : 10000,
-	to this:
-	port: opts.port || (opts.secure ? 20000 : 10000),
-
-
+	- This also installs the required NodeJs package for logentries service. 
+	
+	
 
 ## Usage
 
+When you open the node-Red GUI, there will be a node under the "storage" section called logentries which you can drag onto the board. Then double click to set the configuration.
 
 This module sends your logging entries to the cloud hosted logging service logentries.com. You will need an account with this service for the module to work.
 
@@ -42,5 +40,12 @@ Once you have logentries.com account, you need just one configuration item to in
 ## logentries.com service.
 
 Company site: [logentries.com](http://logentries.com)
+
+## Advanced Topic
+
+If you have advanced port blocking in play and wish to override ports, navigate to your subdirectory of node_modules\logentries\lib and edit logentries.js file so that line 57 is changed from:
+	port: opts.secure ? 20000 : 10000,
+	 - to this:
+	port: opts.port || (opts.secure ? 20000 : 10000),
 
 
